@@ -52,26 +52,26 @@ pub enum Error<E> {
 
 #[derive(Debug)]
 pub struct Concentrations {
-    pm1p0: u16,
-    pm2p5: u16,
-    pm10p0: u16,
+    pub pm1p0: u16,
+    pub pm2p5: u16,
+    pub pm10p0: u16,
 }
 
 #[derive(Debug)]
 pub struct Absolutes {
-    pm0p3: u16,
-    pm0p5: u16,
-    pm1p0: u16,
-    pm2p5: u16,
-    pm5p0: u16,
-    pm10p0: u16,
+    pub pm0p3: u16,
+    pub pm0p5: u16,
+    pub pm1p0: u16,
+    pub pm2p5: u16,
+    pub pm5p0: u16,
+    pub pm10p0: u16,
 }
 
 #[derive(Debug)]
 pub struct Measurement {
-    ug_per_m3: Concentrations,
-    ug_per_m3_atmospheric: Concentrations,
-    per_0p1l: Absolutes,
+    pub ug_per_m3: Concentrations,
+    pub ug_per_m3_atmospheric: Concentrations,
+    pub per_0p1l: Absolutes,
 }
 
 impl Measurement {
